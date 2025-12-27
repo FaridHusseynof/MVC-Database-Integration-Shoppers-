@@ -1,0 +1,148 @@
+﻿@using MVC_Database_Integration__Shoppers_.Models
+@model List<Product>
+
+@{
+	Layout="_Layout";
+}
+
+
+<main>
+	<section id="hero">
+		<div class="containerHero">
+			<div class="textsHero">
+				<h1>Finding Your Perfect Shoes</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer
+					accumsan tincidunt
+					fringilla.
+				</p>
+				<button>SHOP NOW</button>
+			</div>
+
+		</div>
+	</section>
+
+	<section id="infoSec">
+		<div class="containerInfo">
+			<ul>
+				<li>
+					<div class="logoInfo">
+						<span> <i class="fa-solid fa-truck"></i></span>
+					</div>
+
+					<div class="textsInfo">
+						<h2>Free Shipping</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam.
+							Integer accumsan tincidunt
+							fringilla.
+						</p>
+					</div>
+				</li>
+
+				<li>
+					<div class="logoInfo">
+						<span><i class="fa-solid fa-arrow-rotate-right"></i> </span>
+					</div>
+
+					<div class="textsInfo">
+						<h2>Free Returns</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam.
+							Integer accumsan tincidunt
+							fringilla.
+						</p>
+					</div>
+				</li>
+
+				<li>
+					<div class="logoInfo">
+						<span><i class="fa-solid fa-circle-question"></i></span>
+					</div>
+
+					<div class="textsInfo">
+						<h2>Customer Support</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam.
+							Integer accumsan tincidunt
+							fringilla.
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+
+	<section id="collections">
+		<div class="containerCollections">
+
+			<div class="cardCollection CC1">
+				<div class="textsCC">
+					<span>COLLECTIONS</span>
+					<h3>Women</h3>
+				</div>
+			</div>
+
+			<div class="cardCollection CC2">
+				<div class="textsCC">
+					<span>COLLECTIONS</span>
+					<h3>Children</h3>
+				</div>
+			</div>
+
+			<div class="cardCollection CC3">
+				<div class="textsCC">
+					<span>COLLECTIONS</span>
+					<h3>Men</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="featuredProducts">
+		<div class="containerFP">
+
+			<div class="titleFP">
+				<h2>Featured Products</h2>
+			</div>
+
+			<div class="cardsContainerFP">
+				@foreach (var item in Model)
+				{
+					<div class="cardFP">
+						<img src="@item.Image" alt="cloth">
+						<div class="textsCardFP">
+							<a href="@item.Title"></a>
+							<p>@item.Category</p>
+							<p class="price">$@item.Price</p>
+						</div>
+					</div>
+				}
+
+			</div>
+		</div>
+	</section>
+
+	<section id="bigSale">
+		<div class="containerBigSale">
+			<h2>Big Sale!</h2>
+
+			<div class="containerTextsBS">
+				<img src="./assets/images/imgi_8_blog_1.jpg" alt="">
+				<div class="textsBS">
+					<a href="">50% less in all items</a>
+					<p class="infoBS">By <a href="">Carl Smith</a> • September 3, 2018</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam iste dolor accusantium
+						facere corporis ipsum animi
+						deleniti fugiat. Ex, veniam?
+					</p>
+					<button>SHOP NOW</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</main>

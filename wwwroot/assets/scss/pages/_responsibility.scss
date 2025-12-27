@@ -1,0 +1,200 @@
+@media screen and (min-width:300px) and (max-width:576px) {
+    header {
+        height: 150px;
+
+        .containerHeader {
+            width: 95%;
+
+            .topContainerHeader {
+                height: 100%;
+                width: 100%;
+                flex-direction: column;
+                justify-content: space-around;
+
+                .iconsHeader {
+                    display: none;
+                }
+
+                .search {
+                    height: 50%;
+                    order: 2;
+
+                    .hamburger {
+                        display: block;
+                        font-size: 20px;
+                        color: #495057;
+                    }
+                }
+
+
+            }
+
+            .bottomContainer {
+                display: none;
+            }
+        }
+    }
+
+    #hero {
+        .containerHero {
+            width: 95%;
+
+            .textsHero {
+                width: 95%;
+                text-align: center;
+                align-items: center;
+
+                h1 {
+                    font-size: 30px;
+                    line-height: 36px;
+                }
+
+
+            }
+        }
+    }
+
+    #infoSec {
+        height: 90vh;
+
+        .containerInfo {
+            width: 95%;
+
+            ul {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    #collections {
+        height: 220vh;
+
+        .containerCollections {
+            width: 95%;
+            grid-template-columns: 1fr;
+
+            .cardCollection {
+                height: 95%;
+            }
+        }
+    }
+
+    #featuredProducts {
+        .containerFP {
+            width: 95%;
+
+            .cardsContainerFP {
+                grid-template-columns: 1fr;
+
+                .cardFP {
+                    width: 85%;
+                    display: none;
+                }
+
+                .cardFP:first-child {
+                    display: block;
+                }
+            }
+        }
+    }
+
+
+    #bigSale {
+        height: 110vh;
+
+        .containerBigSale {
+            width: 95%;
+
+            .containerTextsBS {
+                flex-direction: column;
+                height: 85%;
+                padding-bottom: 0;
+                margin-top: 20px;
+
+                img {
+                    width: 100%;
+                }
+
+                .textsBS {
+                    width: 100%;
+                    height: 50%;
+                }
+            }
+        }
+    }
+
+
+    footer {
+        height: 200vh;
+
+        .containerFooter {
+            width: 93%;
+
+            .topFooter {
+                height: 90%;
+                padding-bottom: 0px;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .leftTopFooter {
+                    height: 60%;
+
+                    h3 {
+                        margin-bottom: 5px;
+                    }
+
+                    .leftTopFooterInfos {
+                        flex-direction: column;
+                        height: 100%;
+
+                        ul {
+                            gap: 5px;
+                        }
+                    }
+                }
+
+                .rightTopFooter {
+                    flex-direction: column;
+                    width: 100%;
+
+                    &Left {
+                        width: 100%;
+
+                        .title {
+                            margin-top: 40px;
+                        }
+                    }
+
+                    &Right {
+                        margin-top: 30%;
+                        width: 100%;
+
+                        .titleContact {
+                            height: 50%;
+                        }
+
+                        .buttonsFooter {
+                            height: 40%;
+                            width: 100%;
+
+                            label {
+                                margin-top: 10px;
+                            }
+
+                            input {
+                                height: 45%;
+                                width: 95%;
+                            }
+
+                            button {
+                                left: 67%;
+                                top: 60%;
+                                padding: 11px 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

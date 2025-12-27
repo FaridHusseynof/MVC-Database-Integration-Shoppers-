@@ -1,0 +1,97 @@
+#bigSale {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid lightgrey;
+
+    .containerBigSale {
+        width: 75%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 38px;
+            color: #25262a;
+            margin-bottom: 40px;
+        }
+
+        .containerTextsBS {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 40px;
+            width: 100%;
+            height: 70%;
+
+            img {
+                width: 55%;
+            }
+
+
+            .textsBS {
+                width: 40%;
+                height: 60%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                text-align: center;
+
+                a {
+                    font-weight: 400;
+                    font-size: 32px;
+                    line-height: 38px;
+                    color: #7971EA;
+                    text-decoration: none;
+                }
+
+                p {
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 27px;
+                    color: #8c92a0;
+                }
+
+                .infoBS {
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 27px;
+                    color: #c4c7ce;
+
+                    a {
+                        text-decoration: none;
+                        color: #7971EA;
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 27px;
+                    }
+                }
+
+                button {
+                    padding: 10px 20px;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    color: white;
+                    background-color: #7971EA;
+                    border: 1px solid #7971EA;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 21px;
+                    letter-spacing: 3;
+                    transition: 0.3s;
+                }
+
+                button:hover {
+                    background-color: #3a2ee0;
+                }
+            }
+        }
+    }
+}
