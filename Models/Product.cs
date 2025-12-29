@@ -1,11 +1,15 @@
-﻿namespace MVC_Database_Integration__Shoppers_.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace MVC_Database_Integration__Shoppers_.Models
 {
     public class Product:BaseModel
     {
-        public string Image { get; set; }
+        //public string Image { get; set; }
         public string Title { get; set; }
-        public string Category { get; set; }
+        //public string Category { get; set; }
         public int Price { get; set; }
-       
+        public int CategoryId { get; set; }
+        public Category category { get; set; }
+        public ICollection<ProductImage> productImages { get; set; }
     }
 }

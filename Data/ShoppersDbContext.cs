@@ -9,5 +9,8 @@ namespace MVC_Database_Integration__Shoppers_.Data
         {
         }
         public DbSet<Product> products { get; set; } 
+        public DbSet<Summary> summary { get; set; }
+        public DbSet<Category> categories { get; set; }
+        public DbSet<ProductImage> productImages { get; set; }
     }
 }

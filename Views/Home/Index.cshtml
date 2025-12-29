@@ -1,5 +1,6 @@
 ﻿@using MVC_Database_Integration__Shoppers_.Models
-@model List<Product>
+@using MVC_Database_Integration__Shoppers_.ViewModels
+@model HomeViewModel
 
 @{
 	Layout="_Layout";
@@ -10,11 +11,9 @@
 	<section id="hero">
 		<div class="containerHero">
 			<div class="textsHero">
-				<h1>Finding Your Perfect Shoes</h1>
+				<h1>@Model.SummaryItem.Title</h1>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer
-					accumsan tincidunt
-					fringilla.
+					@Model.SummaryItem.Description
 				</p>
 				<button>SHOP NOW</button>
 			</div>
@@ -109,15 +108,16 @@
 			</div>
 
 			<div class="cardsContainerFP">
-				@foreach (var item in Model)
+				@foreach (var item in Model.Products)
 				{
 					<div class="cardFP">
-						<img src="@item.Image" alt="cloth">
-						<div class="textsCardFP">
-							<a href="@item.Title"></a>
-							<p>@item.Category</p>
-							<p class="price">$@item.Price</p>
-						</div>
+						<img src="~/assets/images/@item.productImages?.FirstOrDefault()?.ImageURL" alt="cloth">
+						<div class="textsCardFP"> 
+							<a href="">@item.Title</a>
+						
+						<p>@item.category.Name</p> 
+						<p class="price">$ @item.Price</p> 
+						</div> 
 					</div>
 				}
 
